@@ -1,0 +1,77 @@
+{
+    "timestamp": "2015-06-01T08:30:48Z",
+    "id": "fd41c918-b88b-4b20-a0a5-a4c32391aa31",
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+            "homePage": "http://URL_of_the_Source_LMS?With_The_UserID=0388437472",
+            "name": "0388437472"
+        }
+    },
+    "verb": {
+        "id": "http://activitystrea.ms/schema/1.0/access",
+        "display": {
+            "en-US": "Indicates the learner accessed something"
+        }
+    },
+    "object": {
+        "objectType": "Activity",
+        "id": "http://URL_of_the_Source_LMS/examplewiki.html",
+        "definition": {
+            "name": {
+                "en-US": "name of the wiki"
+            },
+            "description": {
+                "en-US": "This is a wiki"
+            },
+            "type": "http://www.ecolearning.eu/expapi/activitytype/wiki"
+        }
+    },
+    "context": {
+        "extensions": {
+            "http://activitystrea.ms/schema/1.0/place": {
+                "definition": {
+                    "type": "http://activitystrea.ms/schema/1.0/place",
+                    "name": {
+                        "en-US": "Place"
+                    },
+                    "description": {
+                        "en-US": "Represents a physical location."
+                    }
+                },
+                "id": "http://vocab.org/placetime/geopoint/wgs84/X-15.416497Y28.079203.html",
+                "geojson": {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -15.4164969,
+                                    28.0792034
+                                ]
+                            },
+                            "type": "Feature"
+                        }
+                    ]
+                },
+                "objectType": "Place"
+            }
+        },
+        "contextActivities": {
+            "parent": {
+                "id": "http://URL_of_the_Source_LMS/exampleMOOC.html",
+                "objectType": "Activity",
+                "definition": {
+                    "name": {
+                        "en-US": "name of the MOOC"
+                    },
+                    "description": {
+                        "en-US": "This is the originating MOOC"
+                    },
+                    "type": "http://adlnet.gov/expapi/activities/course"
+                }
+            }
+        }
+    }
+}
