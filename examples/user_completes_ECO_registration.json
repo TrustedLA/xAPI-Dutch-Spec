@@ -1,0 +1,62 @@
+{
+    "timestamp": "2015-06-01T08:30:48Z",
+    "id": "fd41c918-b88b-4b20-a0a5-a4c32391aaa3",
+    "actor": {
+        "objectType": "Agent",
+        "account": {
+            "homePage": "http://URL_of_the_Source_LMS?With_The_UserID=0388437472",
+            "name": "0388437472"
+        }
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/registered",
+        "display": {
+            "en-US": "Indicates the learner completed registration process at ECO IDP"
+        }
+    },
+    "object": {
+        "objectType": "Activity",
+        "id": "http://EcoIDPLogin",
+        "definition": {
+            "name": {
+                "en-US": "ECO registration page"
+            },
+            "description": {
+                "en-US": "This is the page where users can register"
+            },
+            "type": "http://activitystrea.ms/schema/1.0/page"
+        }
+    },
+    "context": {
+        "extensions": {
+            "http://activitystrea.ms/schema/1.0/place": {
+                "definition": {
+                    "type": "http://activitystrea.ms/schema/1.0/place",
+                    "name": {
+                        "en-US": "Place"
+                    },
+                    "description": {
+                        "en-US": "Represents a physical location."
+                    }
+                },
+                "id": "http://vocab.org/placetime/geopoint/wgs84/X-15.416497Y28.079203.html",
+                "geojson": {
+                    "type": "FeatureCollection",
+                    "features": [
+                        {
+                            "geometry": {
+                                "type": "Point",
+                                "coordinates": [
+                                    -15.4164969,
+                                    28.0792034
+                                ]
+                            },
+                            "type": "Feature"
+                        }
+                    ]
+                },
+                "objectType": "Place"
+            }
+        }
+    }
+}
